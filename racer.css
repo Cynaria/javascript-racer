@@ -1,0 +1,7 @@
+td:not(:first-child) {
+	border: 2px solid black;
+	padding: 10px;
+}
+td.active{
+	background-color: #FFDD00;
+}
