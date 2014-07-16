@@ -22,6 +22,8 @@ $(document).ready(function() {
 		return (this.endTime - this.startTime)/1000;
 	};
 
+
+	// player function
 	function Player (name, lane, keyCode, keyLetter) {
 		this.name = name;
 		this.lane = lane;
@@ -77,8 +79,8 @@ $(document).ready(function() {
 		});
 
 		function addGameInfo () {
-			Game.numOfPlayers = $("#game-info select[name=players").val();
-			Game.numOfSpaces = $("#game-info select[name=spaces").val();
+			Game.numOfPlayers = $("#game-info select[name=players]").val();
+			Game.numOfSpaces = $("#game-info select[name=spaces]").val();
 		}
 
 		function showItem (ele, item) {
